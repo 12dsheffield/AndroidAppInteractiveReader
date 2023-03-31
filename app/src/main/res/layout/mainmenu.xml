@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu"
+    android:background="@drawable/backgrnd">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeUser"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="@string/theString"
+        tools:text="Welcome, user"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pickStory"
+        android:text="Pick a story:"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/welcomeUser"
+        />
+
+    <ImageView
+        android:id="@+id/frogpic"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/pickStory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/frogprincestory"
+        android:clickable="true"
+        android:onClick="intro"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trophy1"
+        android:text="Pick a story:"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/frogpic"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

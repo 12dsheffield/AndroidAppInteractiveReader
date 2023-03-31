@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".MainMenu"></activity>
+        <activity android:name=".Intro"></activity>
+        <activity android:name=".LookCastle1"></activity>
+        <activity android:name=".FlyEat1"></activity>
+        <activity android:name=".CheckSky"></activity>
+        <activity android:name=".PondRetreat"></activity>
+        <activity android:name=".StayStill"></activity>
+        <activity android:name=".PoorDelores"></activity>
+        <activity android:name=".FlyEat2"></activity>
+        <activity android:name=".LookCastle2"></activity>
+        <activity android:name=".SeePrincess"></activity>
+        <activity android:name=".FrogBreathEnd"></activity>
+        <activity android:name=".PrinceEnd"></activity>
+        <activity android:name=".MuddyFrogEnd"></activity>
+        <activity android:name=".DieHeron"></activity>
+    </application>
+
+</manifest>

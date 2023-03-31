@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DieHeron"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intro"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_margin="25dp"
+        android:gravity="left"
+        android:text="@string/dieheron"
+
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:src="@drawable/heron"
+        android:layout_below="@id/intro"
+        android:id="@+id/heron"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lunch"
+        android:layout_below="@+id/heron"
+        android:text="Redo Last Choice"
+        android:backgroundTint="#4ac21f"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:onClick="Redo"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/returnmenu"
+        android:layout_alignParentBottom="true"
+        android:text="Return to Main Menu"
+        android:backgroundTint="@color/returnColor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:onClick="MainMenu"
+        />
+
+</RelativeLayout>
